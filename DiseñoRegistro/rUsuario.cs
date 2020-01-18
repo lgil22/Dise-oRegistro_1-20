@@ -131,5 +131,10 @@ namespace DiseñoRegistro
         {
 
         }
+
+        private void CelularLabel14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

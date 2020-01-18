@@ -61,6 +61,14 @@
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.CelularLabel14 = new System.Windows.Forms.Label();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.PaisComboBox3 = new System.Windows.Forms.ComboBox();
+            this.DepartamentoLabel14 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -131,6 +139,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox4);
+            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.DepartamentoLabel14);
+            this.groupBox1.Controls.Add(this.PaisComboBox3);
+            this.groupBox1.Controls.Add(this.maskedTextBox5);
+            this.groupBox1.Controls.Add(this.maskedTextBox4);
+            this.groupBox1.Controls.Add(this.CelularLabel14);
+            this.groupBox1.Controls.Add(this.maskedTextBox3);
             this.groupBox1.Controls.Add(this.maskedTextBox2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.NumHijosLabel13);
@@ -155,7 +171,7 @@
             this.groupBox1.Controls.Add(this.SexoLabel4);
             this.groupBox1.Location = new System.Drawing.Point(29, 47);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(606, 294);
+            this.groupBox1.Size = new System.Drawing.Size(606, 283);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -231,15 +247,19 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 13;
+            this.textBox2.Text = "85625458";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "M"});
             this.comboBox2.Location = new System.Drawing.Point(92, 100);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 12;
+            this.comboBox2.Text = "M";
             // 
             // textBox1
             // 
@@ -247,6 +267,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(508, 20);
             this.textBox1.TabIndex = 9;
+            this.textBox1.Text = "LUIS";
             // 
             // DistritoLabel9
             // 
@@ -261,15 +282,18 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "DNI"});
             this.comboBox1.Location = new System.Drawing.Point(92, 69);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 11;
+            this.comboBox1.Text = "DNI";
             // 
             // PaisLabel8
             // 
             this.PaisLabel8.AutoSize = true;
-            this.PaisLabel8.Location = new System.Drawing.Point(16, 221);
+            this.PaisLabel8.Location = new System.Drawing.Point(16, 224);
             this.PaisLabel8.Name = "PaisLabel8";
             this.PaisLabel8.Size = new System.Drawing.Size(30, 13);
             this.PaisLabel8.TabIndex = 7;
@@ -281,12 +305,13 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(508, 20);
             this.maskedTextBox1.TabIndex = 10;
+            this.maskedTextBox1.Text = "GIL BAEZ";
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // EmailLabel7
             // 
             this.EmailLabel7.AutoSize = true;
-            this.EmailLabel7.Location = new System.Drawing.Point(16, 191);
+            this.EmailLabel7.Location = new System.Drawing.Point(16, 194);
             this.EmailLabel7.Name = "EmailLabel7";
             this.EmailLabel7.Size = new System.Drawing.Size(38, 13);
             this.EmailLabel7.TabIndex = 6;
@@ -404,11 +429,91 @@
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(508, 20);
             this.maskedTextBox2.TabIndex = 21;
+            this.maskedTextBox2.Text = "AV.PRINCIPAL LOS LIMONES";
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Location = new System.Drawing.Point(92, 160);
+            this.maskedTextBox3.Mask = "(999) 000-0000";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(136, 20);
+            this.maskedTextBox3.TabIndex = 22;
+            this.maskedTextBox3.Text = " 095092787";
+            // 
+            // CelularLabel14
+            // 
+            this.CelularLabel14.AutoSize = true;
+            this.CelularLabel14.Location = new System.Drawing.Point(255, 164);
+            this.CelularLabel14.Name = "CelularLabel14";
+            this.CelularLabel14.Size = new System.Drawing.Size(42, 13);
+            this.CelularLabel14.TabIndex = 23;
+            this.CelularLabel14.Text = "Celular:";
+            this.CelularLabel14.Click += new System.EventHandler(this.CelularLabel14_Click);
+            // 
+            // maskedTextBox4
+            // 
+            this.maskedTextBox4.Location = new System.Drawing.Point(308, 161);
+            this.maskedTextBox4.Mask = "000-000-0000";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox4.TabIndex = 24;
+            this.maskedTextBox4.Text = "8295092787";
+            // 
+            // maskedTextBox5
+            // 
+            this.maskedTextBox5.Location = new System.Drawing.Point(92, 191);
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            this.maskedTextBox5.Size = new System.Drawing.Size(508, 20);
+            this.maskedTextBox5.TabIndex = 25;
+            this.maskedTextBox5.Text = "Gil@sistema.com.do";
+            // 
+            // PaisComboBox3
+            // 
+            this.PaisComboBox3.FormattingEnabled = true;
+            this.PaisComboBox3.Items.AddRange(new object[] {
+            "República Dominicana"});
+            this.PaisComboBox3.Location = new System.Drawing.Point(92, 221);
+            this.PaisComboBox3.Name = "PaisComboBox3";
+            this.PaisComboBox3.Size = new System.Drawing.Size(157, 21);
+            this.PaisComboBox3.TabIndex = 26;
+            this.PaisComboBox3.Text = "República Dominicana";
+            // 
+            // DepartamentoLabel14
+            // 
+            this.DepartamentoLabel14.AutoSize = true;
+            this.DepartamentoLabel14.Location = new System.Drawing.Point(255, 224);
+            this.DepartamentoLabel14.Name = "DepartamentoLabel14";
+            this.DepartamentoLabel14.Size = new System.Drawing.Size(77, 13);
+            this.DepartamentoLabel14.TabIndex = 27;
+            this.DepartamentoLabel14.Text = "Departamento:";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Villa Tapia"});
+            this.comboBox3.Location = new System.Drawing.Point(338, 221);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(262, 21);
+            this.comboBox3.TabIndex = 28;
+            this.comboBox3.Text = "Villa Tapia";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Salcedo"});
+            this.comboBox4.Location = new System.Drawing.Point(92, 252);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(157, 21);
+            this.comboBox4.TabIndex = 29;
+            this.comboBox4.Text = "Salcedo";
             // 
             // rUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.groupBox1);
@@ -466,6 +571,14 @@
         private System.Windows.Forms.Label NumHijosLabel13;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.Label CelularLabel14;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label DepartamentoLabel14;
+        private System.Windows.Forms.ComboBox PaisComboBox3;
     }
 }
 
