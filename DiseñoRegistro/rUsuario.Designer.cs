@@ -35,33 +35,36 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.SexoLabel4 = new System.Windows.Forms.Label();
-            this.DocumentoLabel3 = new System.Windows.Forms.Label();
-            this.DireccionLabel5 = new System.Windows.Forms.Label();
-            this.ApellidosLabel2 = new System.Windows.Forms.Label();
-            this.TelefonoLabel6 = new System.Windows.Forms.Label();
-            this.NombreLabel1 = new System.Windows.Forms.Label();
-            this.EmailLabel7 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.PaisLabel8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.DistritoLabel9 = new System.Windows.Forms.Label();
+            this.NumHijosLabel13 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.FechaNacLabel12 = new System.Windows.Forms.Label();
+            this.EstadoCivilComboBox3 = new System.Windows.Forms.ComboBox();
+            this.EstadoCivilLabel11 = new System.Windows.Forms.Label();
+            this.NumeroLabel10 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DistritoLabel9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PaisLabel8 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.EmailLabel7 = new System.Windows.Forms.Label();
+            this.NombreLabel1 = new System.Windows.Forms.Label();
+            this.TelefonoLabel6 = new System.Windows.Forms.Label();
+            this.ApellidosLabel2 = new System.Windows.Forms.Label();
+            this.DireccionLabel5 = new System.Windows.Forms.Label();
+            this.DocumentoLabel3 = new System.Windows.Forms.Label();
+            this.SexoLabel4 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.NumeroLabel10 = new System.Windows.Forms.Label();
-            this.EstadoCivilLabel11 = new System.Windows.Forms.Label();
-            this.EstadoCivilComboBox3 = new System.Windows.Forms.ComboBox();
-            this.FechaNacLabel12 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.NumHijosLabel13 = new System.Windows.Forms.Label();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -128,6 +131,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.maskedTextBox2);
+            this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.NumHijosLabel13);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.FechaNacLabel12);
@@ -155,51 +160,137 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // SexoLabel4
+            // NumHijosLabel13
             // 
-            this.SexoLabel4.AutoSize = true;
-            this.SexoLabel4.Location = new System.Drawing.Point(16, 100);
-            this.SexoLabel4.Name = "SexoLabel4";
-            this.SexoLabel4.Size = new System.Drawing.Size(34, 13);
-            this.SexoLabel4.TabIndex = 3;
-            this.SexoLabel4.Text = "Sexo:";
+            this.NumHijosLabel13.AutoSize = true;
+            this.NumHijosLabel13.Location = new System.Drawing.Point(431, 103);
+            this.NumHijosLabel13.Name = "NumHijosLabel13";
+            this.NumHijosLabel13.Size = new System.Drawing.Size(63, 13);
+            this.NumHijosLabel13.TabIndex = 19;
+            this.NumHijosLabel13.Text = "N° de Hijos:";
+            this.NumHijosLabel13.Click += new System.EventHandler(this.label1_Click);
             // 
-            // DocumentoLabel3
+            // dateTimePicker1
             // 
-            this.DocumentoLabel3.AutoSize = true;
-            this.DocumentoLabel3.Location = new System.Drawing.Point(16, 72);
-            this.DocumentoLabel3.Name = "DocumentoLabel3";
-            this.DocumentoLabel3.Size = new System.Drawing.Size(65, 13);
-            this.DocumentoLabel3.TabIndex = 2;
-            this.DocumentoLabel3.Text = "Documento:";
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker1.CustomFormat = "18/01/2020";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dateTimePicker1.Location = new System.Drawing.Point(500, 66);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker1.TabIndex = 18;
+            this.dateTimePicker1.Tag = "";
+            this.dateTimePicker1.Value = new System.DateTime(2020, 1, 18, 16, 10, 18, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // DireccionLabel5
+            // FechaNacLabel12
             // 
-            this.DireccionLabel5.AutoSize = true;
-            this.DireccionLabel5.Location = new System.Drawing.Point(16, 127);
-            this.DireccionLabel5.Name = "DireccionLabel5";
-            this.DireccionLabel5.Size = new System.Drawing.Size(55, 13);
-            this.DireccionLabel5.TabIndex = 4;
-            this.DireccionLabel5.Text = "Direccion:";
+            this.FechaNacLabel12.AutoSize = true;
+            this.FechaNacLabel12.Location = new System.Drawing.Point(422, 72);
+            this.FechaNacLabel12.Name = "FechaNacLabel12";
+            this.FechaNacLabel12.Size = new System.Drawing.Size(72, 13);
+            this.FechaNacLabel12.TabIndex = 17;
+            this.FechaNacLabel12.Text = "F.Nacimiento:";
             // 
-            // ApellidosLabel2
+            // EstadoCivilComboBox3
             // 
-            this.ApellidosLabel2.AutoSize = true;
-            this.ApellidosLabel2.Location = new System.Drawing.Point(16, 44);
-            this.ApellidosLabel2.Name = "ApellidosLabel2";
-            this.ApellidosLabel2.Size = new System.Drawing.Size(52, 13);
-            this.ApellidosLabel2.TabIndex = 1;
-            this.ApellidosLabel2.Text = "Apellidos:";
-            this.ApellidosLabel2.Click += new System.EventHandler(this.label2_Click);
+            this.EstadoCivilComboBox3.FormattingEnabled = true;
+            this.EstadoCivilComboBox3.Items.AddRange(new object[] {
+            "Selec."});
+            this.EstadoCivilComboBox3.Location = new System.Drawing.Point(308, 100);
+            this.EstadoCivilComboBox3.Name = "EstadoCivilComboBox3";
+            this.EstadoCivilComboBox3.Size = new System.Drawing.Size(100, 21);
+            this.EstadoCivilComboBox3.TabIndex = 16;
+            this.EstadoCivilComboBox3.Text = "Selec.";
             // 
-            // TelefonoLabel6
+            // EstadoCivilLabel11
             // 
-            this.TelefonoLabel6.AutoSize = true;
-            this.TelefonoLabel6.Location = new System.Drawing.Point(16, 155);
-            this.TelefonoLabel6.Name = "TelefonoLabel6";
-            this.TelefonoLabel6.Size = new System.Drawing.Size(52, 13);
-            this.TelefonoLabel6.TabIndex = 5;
-            this.TelefonoLabel6.Text = "Telefono:";
+            this.EstadoCivilLabel11.AutoSize = true;
+            this.EstadoCivilLabel11.Location = new System.Drawing.Point(237, 103);
+            this.EstadoCivilLabel11.Name = "EstadoCivilLabel11";
+            this.EstadoCivilLabel11.Size = new System.Drawing.Size(65, 13);
+            this.EstadoCivilLabel11.TabIndex = 15;
+            this.EstadoCivilLabel11.Text = "Estado Civil:";
+            this.EstadoCivilLabel11.Click += new System.EventHandler(this.EstadoCivilLabel11_Click);
+            // 
+            // NumeroLabel10
+            // 
+            this.NumeroLabel10.AutoSize = true;
+            this.NumeroLabel10.Location = new System.Drawing.Point(255, 72);
+            this.NumeroLabel10.Name = "NumeroLabel10";
+            this.NumeroLabel10.Size = new System.Drawing.Size(47, 13);
+            this.NumeroLabel10.TabIndex = 14;
+            this.NumeroLabel10.Text = "Numero:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(308, 69);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 13;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(92, 100);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 12;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(92, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(508, 20);
+            this.textBox1.TabIndex = 9;
+            // 
+            // DistritoLabel9
+            // 
+            this.DistritoLabel9.AutoSize = true;
+            this.DistritoLabel9.Location = new System.Drawing.Point(16, 255);
+            this.DistritoLabel9.Name = "DistritoLabel9";
+            this.DistritoLabel9.Size = new System.Drawing.Size(42, 13);
+            this.DistritoLabel9.TabIndex = 8;
+            this.DistritoLabel9.Text = "Distrito:";
+            this.DistritoLabel9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(92, 69);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 11;
+            // 
+            // PaisLabel8
+            // 
+            this.PaisLabel8.AutoSize = true;
+            this.PaisLabel8.Location = new System.Drawing.Point(16, 221);
+            this.PaisLabel8.Name = "PaisLabel8";
+            this.PaisLabel8.Size = new System.Drawing.Size(30, 13);
+            this.PaisLabel8.TabIndex = 7;
+            this.PaisLabel8.Text = "Pais:";
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(92, 41);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(508, 20);
+            this.maskedTextBox1.TabIndex = 10;
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
+            // EmailLabel7
+            // 
+            this.EmailLabel7.AutoSize = true;
+            this.EmailLabel7.Location = new System.Drawing.Point(16, 191);
+            this.EmailLabel7.Name = "EmailLabel7";
+            this.EmailLabel7.Size = new System.Drawing.Size(38, 13);
+            this.EmailLabel7.TabIndex = 6;
+            this.EmailLabel7.Text = "E.mail:";
             // 
             // NombreLabel1
             // 
@@ -211,56 +302,51 @@
             this.NombreLabel1.Text = "Nombres: ";
             this.NombreLabel1.Click += new System.EventHandler(this.NombreLabel1_Click);
             // 
-            // EmailLabel7
+            // TelefonoLabel6
             // 
-            this.EmailLabel7.AutoSize = true;
-            this.EmailLabel7.Location = new System.Drawing.Point(16, 181);
-            this.EmailLabel7.Name = "EmailLabel7";
-            this.EmailLabel7.Size = new System.Drawing.Size(38, 13);
-            this.EmailLabel7.TabIndex = 6;
-            this.EmailLabel7.Text = "E.mail:";
+            this.TelefonoLabel6.AutoSize = true;
+            this.TelefonoLabel6.Location = new System.Drawing.Point(16, 164);
+            this.TelefonoLabel6.Name = "TelefonoLabel6";
+            this.TelefonoLabel6.Size = new System.Drawing.Size(52, 13);
+            this.TelefonoLabel6.TabIndex = 5;
+            this.TelefonoLabel6.Text = "Telefono:";
             // 
-            // maskedTextBox1
+            // ApellidosLabel2
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(92, 41);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(508, 20);
-            this.maskedTextBox1.TabIndex = 10;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.ApellidosLabel2.AutoSize = true;
+            this.ApellidosLabel2.Location = new System.Drawing.Point(16, 44);
+            this.ApellidosLabel2.Name = "ApellidosLabel2";
+            this.ApellidosLabel2.Size = new System.Drawing.Size(52, 13);
+            this.ApellidosLabel2.TabIndex = 1;
+            this.ApellidosLabel2.Text = "Apellidos:";
+            this.ApellidosLabel2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // PaisLabel8
+            // DireccionLabel5
             // 
-            this.PaisLabel8.AutoSize = true;
-            this.PaisLabel8.Location = new System.Drawing.Point(16, 217);
-            this.PaisLabel8.Name = "PaisLabel8";
-            this.PaisLabel8.Size = new System.Drawing.Size(30, 13);
-            this.PaisLabel8.TabIndex = 7;
-            this.PaisLabel8.Text = "Pais:";
+            this.DireccionLabel5.AutoSize = true;
+            this.DireccionLabel5.Location = new System.Drawing.Point(16, 133);
+            this.DireccionLabel5.Name = "DireccionLabel5";
+            this.DireccionLabel5.Size = new System.Drawing.Size(55, 13);
+            this.DireccionLabel5.TabIndex = 4;
+            this.DireccionLabel5.Text = "Direccion:";
             // 
-            // comboBox1
+            // DocumentoLabel3
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(92, 69);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 11;
+            this.DocumentoLabel3.AutoSize = true;
+            this.DocumentoLabel3.Location = new System.Drawing.Point(16, 72);
+            this.DocumentoLabel3.Name = "DocumentoLabel3";
+            this.DocumentoLabel3.Size = new System.Drawing.Size(65, 13);
+            this.DocumentoLabel3.TabIndex = 2;
+            this.DocumentoLabel3.Text = "Documento:";
             // 
-            // DistritoLabel9
+            // SexoLabel4
             // 
-            this.DistritoLabel9.AutoSize = true;
-            this.DistritoLabel9.Location = new System.Drawing.Point(16, 247);
-            this.DistritoLabel9.Name = "DistritoLabel9";
-            this.DistritoLabel9.Size = new System.Drawing.Size(42, 13);
-            this.DistritoLabel9.TabIndex = 8;
-            this.DistritoLabel9.Text = "Distrito:";
-            this.DistritoLabel9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(92, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(508, 20);
-            this.textBox1.TabIndex = 9;
+            this.SexoLabel4.AutoSize = true;
+            this.SexoLabel4.Location = new System.Drawing.Point(16, 103);
+            this.SexoLabel4.Name = "SexoLabel4";
+            this.SexoLabel4.Size = new System.Drawing.Size(34, 13);
+            this.SexoLabel4.TabIndex = 3;
+            this.SexoLabel4.Text = "Sexo:";
             // 
             // toolStrip1
             // 
@@ -286,6 +372,13 @@
             this.toolStripSplitButton1.Size = new System.Drawing.Size(16, 22);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(69, 22);
+            this.toolStripLabel1.Text = "Descripción";
+            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
+            // 
             // toolStrip2
             // 
             this.toolStrip2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -298,93 +391,19 @@
             this.toolStrip2.TabIndex = 14;
             this.toolStrip2.Text = "toolStrip2";
             // 
-            // toolStripLabel1
+            // numericUpDown1
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(69, 22);
-            this.toolStripLabel1.Text = "Descripción";
-            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
+            this.numericUpDown1.Location = new System.Drawing.Point(500, 100);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown1.TabIndex = 20;
             // 
-            // comboBox2
+            // maskedTextBox2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(92, 100);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(308, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // NumeroLabel10
-            // 
-            this.NumeroLabel10.AutoSize = true;
-            this.NumeroLabel10.Location = new System.Drawing.Point(255, 72);
-            this.NumeroLabel10.Name = "NumeroLabel10";
-            this.NumeroLabel10.Size = new System.Drawing.Size(47, 13);
-            this.NumeroLabel10.TabIndex = 14;
-            this.NumeroLabel10.Text = "Numero:";
-            // 
-            // EstadoCivilLabel11
-            // 
-            this.EstadoCivilLabel11.AutoSize = true;
-            this.EstadoCivilLabel11.Location = new System.Drawing.Point(237, 103);
-            this.EstadoCivilLabel11.Name = "EstadoCivilLabel11";
-            this.EstadoCivilLabel11.Size = new System.Drawing.Size(65, 13);
-            this.EstadoCivilLabel11.TabIndex = 15;
-            this.EstadoCivilLabel11.Text = "Estado Civil:";
-            this.EstadoCivilLabel11.Click += new System.EventHandler(this.EstadoCivilLabel11_Click);
-            // 
-            // EstadoCivilComboBox3
-            // 
-            this.EstadoCivilComboBox3.FormattingEnabled = true;
-            this.EstadoCivilComboBox3.Items.AddRange(new object[] {
-            "Selec."});
-            this.EstadoCivilComboBox3.Location = new System.Drawing.Point(308, 100);
-            this.EstadoCivilComboBox3.Name = "EstadoCivilComboBox3";
-            this.EstadoCivilComboBox3.Size = new System.Drawing.Size(100, 21);
-            this.EstadoCivilComboBox3.TabIndex = 16;
-            this.EstadoCivilComboBox3.Text = "Selec.";
-            // 
-            // FechaNacLabel12
-            // 
-            this.FechaNacLabel12.AutoSize = true;
-            this.FechaNacLabel12.Location = new System.Drawing.Point(422, 72);
-            this.FechaNacLabel12.Name = "FechaNacLabel12";
-            this.FechaNacLabel12.Size = new System.Drawing.Size(72, 13);
-            this.FechaNacLabel12.TabIndex = 17;
-            this.FechaNacLabel12.Text = "F.Nacimiento:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.CustomFormat = "18/01/2020";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(500, 66);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 18;
-            this.dateTimePicker1.Tag = "";
-            this.dateTimePicker1.Value = new System.DateTime(2020, 1, 18, 16, 10, 18, 0);
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // NumHijosLabel13
-            // 
-            this.NumHijosLabel13.AutoSize = true;
-            this.NumHijosLabel13.Location = new System.Drawing.Point(431, 103);
-            this.NumHijosLabel13.Name = "NumHijosLabel13";
-            this.NumHijosLabel13.Size = new System.Drawing.Size(63, 13);
-            this.NumHijosLabel13.TabIndex = 19;
-            this.NumHijosLabel13.Text = "N° de Hijos:";
-            this.NumHijosLabel13.Click += new System.EventHandler(this.label1_Click);
+            this.maskedTextBox2.Location = new System.Drawing.Point(92, 130);
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(508, 20);
+            this.maskedTextBox2.TabIndex = 21;
             // 
             // rUsuario
             // 
@@ -407,6 +426,7 @@
             this.groupBox1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,6 +464,8 @@
         private System.Windows.Forms.Label FechaNacLabel12;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label NumHijosLabel13;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
     }
 }
 
