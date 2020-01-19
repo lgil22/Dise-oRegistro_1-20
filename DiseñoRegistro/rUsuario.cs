@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace DiseñoRegistro
 {
     public partial class rUsuario : Form
@@ -15,6 +16,7 @@ namespace DiseñoRegistro
         public rUsuario()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
 
         private void rUsuario_Load(object sender, EventArgs e)
@@ -24,14 +26,26 @@ namespace DiseñoRegistro
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string imagen = openFileDialog1.FileName;
+                    pictureBox1.Image = Image.FromFile(imagen);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("El archivo seleccionado no es un tipo de imagen válido");
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            //button4.Clear();
         }
 
+      
         private void eventLog1_EntryWritten(object sender, System.Diagnostics.EntryWrittenEventArgs e)
         {
 
@@ -165,6 +179,11 @@ namespace DiseñoRegistro
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

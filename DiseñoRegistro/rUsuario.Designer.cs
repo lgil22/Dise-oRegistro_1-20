@@ -33,7 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.NuevoButton4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -74,16 +74,17 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -130,6 +131,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Salir";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -144,19 +146,19 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // NuevoButton4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(297, 385);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 40);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Nuevo Registro:";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.NuevoButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NuevoButton4.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton4.Image")));
+            this.NuevoButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NuevoButton4.Location = new System.Drawing.Point(297, 385);
+            this.NuevoButton4.Name = "NuevoButton4";
+            this.NuevoButton4.Size = new System.Drawing.Size(147, 40);
+            this.NuevoButton4.TabIndex = 4;
+            this.NuevoButton4.Text = "Nuevo Registro:";
+            this.NuevoButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NuevoButton4.UseVisualStyleBackColor = true;
+            this.NuevoButton4.Click += new System.EventHandler(this.button4_Click);
             // 
             // groupBox1
             // 
@@ -581,6 +583,37 @@
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(126, 6);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(44, 40);
+            this.button8.TabIndex = 18;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(5, 6);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(41, 40);
+            this.button7.TabIndex = 18;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(52, 6);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(44, 40);
+            this.button6.TabIndex = 18;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -596,37 +629,6 @@
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(52, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(44, 40);
-            this.button6.TabIndex = 18;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(5, 6);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(41, 40);
-            this.button7.TabIndex = 18;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(126, 6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(44, 40);
-            this.button8.TabIndex = 18;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.label3);
@@ -636,15 +638,6 @@
             this.groupBox5.TabIndex = 18;
             this.groupBox5.TabStop = false;
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.label4);
-            this.groupBox6.Location = new System.Drawing.Point(297, 357);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(517, 28);
-            this.groupBox6.TabIndex = 19;
-            this.groupBox6.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -653,6 +646,15 @@
             this.label3.Size = new System.Drawing.Size(122, 13);
             this.label3.TabIndex = 20;
             this.label3.Text = "Navegador de Registros";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label4);
+            this.groupBox6.Location = new System.Drawing.Point(297, 357);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(517, 28);
+            this.groupBox6.TabIndex = 19;
+            this.groupBox6.TabStop = false;
             // 
             // label4
             // 
@@ -681,6 +683,10 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Controles de Imagen";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // rUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -695,13 +701,15 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.NuevoButton4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "rUsuario";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Registro de Personal";
             this.Load += new System.EventHandler(this.rUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -732,7 +740,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button NuevoButton4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label DistritoLabel9;
@@ -783,6 +791,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
